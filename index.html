@@ -271,7 +271,7 @@ details.strategy[open] summary h2::after{content:"–"}
 
   <details class="glass strategy" open>
     <summary><h2><span class="ic pr" style="width:26px;height:26px;border-radius:9px"><svg viewBox="0 0 24 24"><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg></span>How the 27 days are sequenced</h2></summary>
-    <p>The five holiday-sprint days (9–12 July) do the heavy lifting: they install the machinery — QR scoping-on-the-board, checkpoint discipline, DM notation, the priming routine — while volume is cheap at 5–6h/day, with QR taking the largest share every single day because it's your biggest, most coachable gap. Once school resumes, the ~2.5h evenings run a fixed rhythm: QR always, DM/VR alternating, an 8-minute review, and a 48-hour error-bank re-attempt woven in two days after every session; a timed mini-mock lands every ~3 days to keep real pacing honest, and both SAC-prep eves (14 &amp; 21 July) are protected. Phase 3 converts practice into match fitness with three full mocks spaced ~3 days apart — Practice Test A on Sat 25, then the two officials, C on Tue 28 and D on Fri 31, as your most realistic dress rehearsals — with only error-bank and weakest-category work in between. The final weekend tapers hard: nothing new after Fri 31, checkpoint rehearsal and sleep on Sun 2, priming and go on Mon 3.</p>
+    <p>The five holiday-sprint days (9–12 July) do the heavy lifting: they install the machinery — QR scoping-on-the-board, checkpoint discipline, DM notation, the priming routine — while volume is cheap at 5–6h/day, with QR taking the largest share every single day because it's your biggest, most coachable gap. Once school resumes, the ~2.5h evenings run a fixed rhythm: QR always, DM/VR alternating, an 8-minute review, and a 48-hour error-bank re-attempt woven in two days after every session; a timed mini-mock lands every ~3 days to keep real pacing honest, and both SAC-prep eves (14 &amp; 21 July) are protected. A first FULL all-section mock is pulled forward to Sun 19 (Practice Test B) as an early stamina rehearsal — so you find your fatigue point with a full week left to train against it, rather than discovering it in mock phase. Phase 3 then converts practice into match fitness with three more full mocks spaced ~3 days apart — Practice Test A on Sat 25, then the two officials, C on Tue 28 and D on Fri 31, as your most realistic dress rehearsals — with only error-bank and weakest-category work in between. The final weekend tapers hard: nothing new after Fri 31, checkpoint rehearsal and sleep on Sun 2, priming and go on Mon 3.</p>
     <div class="honest">Honest read: ~1750 → 2400 in 27 days is a stretch — but because roughly half your lost marks are <em>unfinished</em> questions, pacing alone is worth ~150–250 points for zero new content. Full execution of this plan puts ~2150–2350 firmly in range, with 2400+ a live outcome if QR converts and the checkpoints hold in real mocks.</div>
   </details>
 
@@ -459,17 +459,14 @@ const DAYS=[
   {tag:'REVIEW',t:'1:45',title:'Review protocol (~8 min) + error bank',d:''}
  ]},
 
-{d:'2026-07-19',ph:2,w:'SUN',n:'19',label:'Sun 19 July',types:['WEEKEND'],hours:'~4.5h',
+{d:'2026-07-19',ph:2,w:'SUN',n:'19',label:'Sun 19 July',types:['WEEKEND'],extra:'FULL MOCK #1 (EARLY) · TEST B',hours:'~4.5h',
+ note:'Your FIRST full all-section mock — pulled forward so today is a stamina rehearsal, not a score. The whole point: find out where fatigue hits, where your hands get sloppy in the back third, and whether the checkpoints survive a real cross-section run — with a full week left to fix it before mock phase proper.',
  tasks:[
-  {tag:'PRIME',t:'9:30',title:'Priming routine (5 min)',d:''},
-  {tag:'MOCK',t:'9:35',title:'Mock exams → QR Mini-Mock 4 (26 min)',d:'Checkpoints live. Variable: accuracy at 43s/q with board scoping.'},
-  {tag:'REVIEW',t:'10:10',title:'10-min debrief',d:''},
-  {tag:'ERR',t:'10:25',title:'48h re-attempt — Fri 17 wrongs (15 min)',d:''},
-  {tag:'QR',t:'10:50',title:'Performance mining (25 min) + Text Alone 10Q',d:''},
-  {tag:'PRIME',t:'12:15',title:'Priming (5 min) before DM',d:''},
-  {tag:'DM',t:'12:20',title:'DM → Venn 12Q + Logic Puzzles 10Q',d:'Caps on. Illegal-step reframe: if the conclusion needs one, the answer IS No — stop hunting.'},
-  {tag:'VR',t:'1:20',title:'VR → RC — 2 passages timed',d:''},
-  {tag:'REVIEW',t:'1:50',title:'Review protocol (~8 min) + error bank',d:''}
+  {tag:'PRIME',t:'9:30',title:'Full priming — treat this like test morning',d:'Numpad 90s, checkpoint card, 4-in/6-out breathing, one sentence: “flag and move — checkpoints win the back third.”'},
+  {tag:'MOCK',t:'9:35',title:'Mock exams → UCAT Practice Test B — FULL RUN',d:'All checkpoints live in VR, DM, QR. Click through SJ instantly — zero energy there. Behind at any checkpoint = best-guess + flag, no negotiation. This is a dress rehearsal for concentration and pacing, not an accuracy chase.'},
+  {tag:'REVIEW',t:'12:00',title:'25-min stamina debrief',d:'Per section: checkpoints hit? → back-third completion rate → WHERE did focus/hands break down (which section, roughly what minute)? → group errors into patterns → feed error bank. Note the fatigue point — that’s what the next week trains against.'},
+  {tag:'ERR',t:'12:35',title:'48h re-attempt — Fri 17 wrongs (15 min)',d:''},
+  {tag:'QR',t:'12:55',title:'Light QR → Performance mining (20 min) — or stop if fried',d:'Recovery counts as training after a full mock. Stop on a win.'}
  ]},
 
 {d:'2026-07-20',ph:2,w:'MON',n:'20',label:'Mon 20 July',types:['SCHOOL DAY'],hours:'~2.5h',
@@ -514,8 +511,8 @@ const DAYS=[
   {tag:'REVIEW',t:'7:05',title:'Read BOTH checkpoint cards aloud + review (10 min)',d:'Then stop. Sleep sets up tomorrow.'}
  ]},
 
-{d:'2026-07-25',ph:3,w:'SAT',n:'25',label:'Sat 25 July',types:['WEEKEND'],extra:'FULL MOCK #1',hours:'morning block',
- note:'Your first-ever full all-section mock. The score matters less than checkpoint compliance and back-third completion.',
+{d:'2026-07-25',ph:3,w:'SAT',n:'25',label:'Sat 25 July',types:['WEEKEND'],extra:'FULL MOCK #2',hours:'morning block',
+ note:'Second full mock, first of the mock phase. You’ve already sat one on the 19th, so today is about applying that week’s fixes — the score should start mattering now. Checkpoint compliance and back-third completion still come first.',
  tasks:[
   {tag:'PRIME',t:'9:30',title:'Full priming — treat this like test morning',d:'Numpad 90s, card, breathing, one sentence: “flag and move.”'},
   {tag:'MOCK',t:'9:35',title:'Mock exams → UCAT Practice Test A — FULL RUN',d:'All checkpoints live in VR, DM, QR. Click through SJ instantly — zero energy there. Behind at any checkpoint = best-guess + flag, no negotiation.'},
@@ -547,7 +544,7 @@ const DAYS=[
   {tag:'REVIEW',t:'7:30',title:'Review (~8 min) — then early night',d:'Official mock tomorrow.'}
  ]},
 
-{d:'2026-07-28',ph:3,w:'TUE',n:'28',label:'Tue 28 July',types:['SCHOOL DAY'],extra:'FULL MOCK #2 · OFFICIAL C',hours:'evening',
+{d:'2026-07-28',ph:3,w:'TUE',n:'28',label:'Tue 28 July',types:['SCHOOL DAY'],extra:'FULL MOCK #3 · OFFICIAL C',hours:'evening',
  note:'Assumption: with SJ clicked through, VR + DM + QR ≈ 85 min fits the 5:00–7:45 window. If you’d rather keep full mocks to weekends, swap this with Sun 26’s plan.',
  tasks:[
   {tag:'PRIME',t:'5:00',title:'Full test-morning priming',d:''},
@@ -568,7 +565,7 @@ const DAYS=[
   {tag:'REVIEW',t:'7:15',title:'Review (~8 min)',d:'Final full mock tomorrow — last hard day.'}
  ]},
 
-{d:'2026-07-31',ph:3,w:'FRI',n:'31',label:'Fri 31 July',types:['SCHOOL DAY'],extra:'FULL MOCK #3 · OFFICIAL D — FINAL',hours:'evening',
+{d:'2026-07-31',ph:3,w:'FRI',n:'31',label:'Fri 31 July',types:['SCHOOL DAY'],extra:'FULL MOCK #4 · OFFICIAL D — FINAL',hours:'evening',
  note:'Final dress rehearsal. After tonight, nothing new and nothing hard.',
  tasks:[
   {tag:'PRIME',t:'5:00',title:'Full test-morning priming',d:''},
@@ -747,19 +744,20 @@ function closeSheet(){ $('#sheet').hidden=true; sheetDate=null; document.body.st
 /* ============ PERSISTENCE ============ */
 let saveTimer=null;
 async function loadState(){
-  try{
-    const c=localStorage.getItem(KEY_CHECKS); if(c) checks=JSON.parse(c);
-    const u=localStorage.getItem(KEY_CUSTOM); if(u) customs=JSON.parse(u);
-    storageOK=true;
-  }catch(e){ storageOK=false; }
+  if(!window.storage) return;
+  storageOK=true;
+  try{ const r=await window.storage.get(KEY_CHECKS); if(r&&r.value) checks=JSON.parse(r.value); }catch(e){}
+  try{ const r=await window.storage.get(KEY_CUSTOM); if(r&&r.value) customs=JSON.parse(r.value); }catch(e){}
 }
 function saveState(){
   clearTimeout(saveTimer);
-  saveTimer=setTimeout(()=>{
+  saveTimer=setTimeout(async()=>{
     try{
-      localStorage.setItem(KEY_CHECKS,JSON.stringify(checks));
-      localStorage.setItem(KEY_CUSTOM,JSON.stringify(customs));
-      toast('Saved');
+      if(window.storage){
+        await window.storage.set(KEY_CHECKS,JSON.stringify(checks));
+        await window.storage.set(KEY_CUSTOM,JSON.stringify(customs));
+        toast('Saved');
+      }
     }catch(e){ toast('Couldn’t save'); }
   },400);
 }
@@ -862,7 +860,7 @@ $('#todayBtn').addEventListener('click',()=>{
   renderList();
   renderCal();
   refresh();
-  if(!storageOK) toast('Storage blocked — ticks won’t persist');
+  if(!storageOK) toast('Ticks won’t persist outside Claude');
   const t=document.getElementById('day-'+todayISO);
   if(t) setTimeout(()=>t.scrollIntoView({behavior:'smooth',block:'center'}),400);
 })();
